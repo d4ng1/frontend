@@ -1,0 +1,54 @@
+.section-portada {
+    margin: 0 auto;
+}
+
+.portada-card {
+    width: 100%;
+    max-width: 378px;
+    height: calc(100% * 9/16);
+    margin: 0 auto;
+    position: relative;
+}
+
+.portada-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portada-descripcion {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    font-size: 1.5rem;
+    text-decoration: overline;
+    font-style: italic;
+}
+
+.portada-precio {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    font-size: 2rem;
+    text-decoration: overline;
+}
+
+@media(min-width: 420px) {
+    .portada-card {
+        width: 90%;
+        height: calc(90% * 9/16);
+    }
+}
+
+@media(min-width: 719px) {
+    .portada-card {
+        max-width: 1024px;
+    }
+    .portada-descripcion {
+        font-size: 2.5rem;
+    }
+    
+    .portada-precio {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,156 @@
+.main-pelicula{
+    background-color: black;
+}
+
+.portada-pelicula{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.section-pelicula{
+    position: relative;
+}
+
+.section-pelicula h1{
+    position: sticky;
+    top: calc(100vw/5);
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 100px; 
+    margin-top: 24px;
+    text-shadow: 2px 2px 1px black;
+    z-index: 1;
+}
+
+
+.article-pelicula{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    z-index: 0;
+    
+}
+.imagen{
+    width: 100%;
+}
+.imagen-peliculas{
+    width: 100%;
+}
+.descripcion{
+    width: 100%;
+}
+.trailer{
+    width: 100%;
+    height: calc(100vw*9/16);
+
+}
+.text-pelicula{
+    background-color: black;
+    color: white;
+    padding: 24px;
+}
+.sinopsis{
+    text-align: justify;
+    margin-bottom: 24px;
+}
+.tablas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+table{
+    background-color: #856332;
+}
+td{
+    background-color: black;
+    color: white;
+    border: 1px solid #f0e594;
+} 
+@media(min-width: 420px){
+    .section-pelicula{
+        /* max-width: 420px; */
+        padding: 0 10%;
+        margin: 0 auto;
+    }
+    .section-pelicula h1{
+        top: 0;
+    }
+    .portada-pelicula{
+        z-index: 0;
+    }
+    .trailer{
+        height: calc(90vw*9/16);
+    }
+    .imagen{
+        max-width: 470px;
+    }
+}
+@media(min-width: 1200px){
+
+.section-pelicula{
+    position: relative;
+    padding-top: 40px;
+    padding: 0 5%;
+}
+.section-pelicula h1{
+    margin-top: -25vw;
+    margin-bottom: 25vw;
+    
+}
+.portada-pelicula{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+}
+.imagen{
+    width: 100%;
+}
+.imagen-peliculas{
+    width: 100%;
+}
+.trailer{
+    width: 720px;
+    height: 400px;
+
+}
+.article-pelicula{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+
+}
+.descripcion{
+    width: 720px;
+}
+.text-pelicula{
+    background-color: black;
+    color: white;
+    padding: 48px;
+}
+.sinopsis{
+    text-align: justify;
+    margin-bottom: 24px;
+}
+.tablas{
+    display: flex;
+    justify-content: space-evenly;
+}
+table{
+    background-color: #856332;
+    margin: 0 20px;
+}
+td{
+    background-color: black;
+    color: white;
+    border: 1px solid #f0e594;
+}
+}

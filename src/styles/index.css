@@ -1,0 +1,60 @@
+main{
+    text-align: center;
+}
+main h1{
+    margin: 8px;
+    color: white;
+}
+.peliculas-card{
+    margin: 0 auto;
+    margin-top: 48px;
+    width: 220px;
+    height: 400px;
+    background-color: red;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px 4px black ;
+    position: relative;
+    color: white;
+}
+.peliculas-card h4{
+    z-index: 4;
+}
+.peliculas-card img{
+    width: 100%;
+}
+.mas{
+    position: absolute;
+    width: 220px;
+    background-color: white;
+    height: 400px;
+    z-index: 1;
+    opacity: 1%;
+    display: flex;
+    align-items: center;
+}
+.mas-img{
+    width: 80px;
+}
+@media(min-width: 719px){
+    .section-index{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 56px;
+    }
+    .peliculas-card{
+        margin-bottom: 72px;
+        background-color: black;
+
+    }
+    .peliculas-card:hover{
+        background-color: red;
+        max-height: 300px;
+        width: 300px;
+        box-shadow: none;
+    }
+    .mas:hover{
+        opacity: 20%;
+        width: 300px;
+        height: 474px;
+    }
+}
