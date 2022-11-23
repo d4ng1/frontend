@@ -47,7 +47,7 @@ const NuevaPortada = () => {
             <label>precio:</label>
             <input
               id="precio"
-              type="text"
+              type="number"
               placeholder="precio..." value={precio} onChange={(e) => { setPrecio(e.target.value) }}
               required
             ></input>
