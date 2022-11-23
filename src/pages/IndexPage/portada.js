@@ -9,7 +9,7 @@ const Portada = () => {
 
   useEffect(() => {
     fetch(
-      'http://localhost:5005/api/portada'
+      'https://backendmern-g7.azurewebsites.net/api/portada'
     )
       .then((res) => res.json())
       .then((Protada) => {

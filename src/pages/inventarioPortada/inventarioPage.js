@@ -9,7 +9,7 @@ const InventarioPortada = () => {
 
   useEffect(() => {
     fetch(
-      'http://localhost:5005/api/portada'
+      'https://backendmern-g7.azurewebsites.net/api/portada'
     )
       .then((res) => res.json())
       .then((portada) => {
@@ -37,7 +37,7 @@ const InventarioPortada = () => {
         swal("La portada ha sido eliminada!", {
           icon: "success",
         });
-          axios.delete(`http://localhost:5005/api/portada/${param}`)
+          axios.delete(`https://backendmern-g7.azurewebsites.net/api/portada/${param}`)
           .then(res => {
             console.log(res.data)      
             window.location.reload(true)

@@ -9,7 +9,7 @@ const InventarioPage = () => {
 
   useEffect(() => {
     fetch(
-      'http://localhost:5005/api/peliculas'
+      'https://backendmern-g7.azurewebsites.net/api/peliculas'
     )
       .then((res) => res.json())
       .then((movies) => {
@@ -37,7 +37,7 @@ const InventarioPage = () => {
         swal("La pelicula ha sido eliminada!", {
           icon: "success",
         });
-          axios.delete(`http://localhost:5005/api/peliculas/${param}`)
+          axios.delete(`https://backendmern-g7.azurewebsites.net/api/peliculas/${param}`)
           .then(res => {
             console.log(res.data)      
             window.location.reload(true)

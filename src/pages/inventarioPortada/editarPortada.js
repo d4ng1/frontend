@@ -14,7 +14,7 @@ const EditarPortada = () => {
 
   const idPortadas = () => {
 
-    fetch(`http://localhost:5005/api/portada/${portada_id}`)
+    fetch(`https://backendmern-g7.azurewebsites.net/api/portada/${portada_id}`)
       .then((res) => res.json())
       .then((portada) => {
         setPortada(portada)
@@ -34,7 +34,7 @@ const EditarPortada = () => {
     }
 
     if (window.confirm('Desea guardar los cambios?')) {
-      await axios.put(`http://localhost:5005/api/portada/${portada_id}`, portadaObtenida).then(res => {
+      await axios.put(`https://backendmern-g7.azurewebsites.net/api/portada/${portada_id}`, portadaObtenida).then(res => {
         console.log(" response: ", res)
       }).catch((error) => {
         console.log("error : ", error)

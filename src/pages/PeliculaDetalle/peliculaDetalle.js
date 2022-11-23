@@ -6,7 +6,7 @@ const PeliculaDetalle = () => {
   const { pelicula_id } = useParams();
   const [pelicula, setPelicula] = useState({});
     useEffect(() => {
-      fetch(`http://localhost:5005/api/peliculas/${pelicula_id}`)
+      fetch(`https://backendmern-g7.azurewebsites.net/api/peliculas/${pelicula_id}`)
         .then((response) => response.json())
         .then((pelicula) => setPelicula(pelicula))
         .catch((err) => console.log(err));

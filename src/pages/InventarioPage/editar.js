@@ -22,7 +22,7 @@ const Editar = () => {
 
   const idPeliculas = () => {
 
-    fetch(`http://localhost:5005/api/peliculas/${pelicula_id}`)
+    fetch(`https://backendmern-g7.azurewebsites.net/api/peliculas/${pelicula_id}`)
       .then((res) => res.json())
       .then((pelicula) => {
         setPelicula(pelicula)
@@ -50,7 +50,7 @@ const Editar = () => {
     }
 
     if (window.confirm('Desea guardar los cambios?')) {
-      await axios.put(`http://localhost:5005/api/peliculas/${pelicula_id}`, peliculaObtenida).then(res => {
+      await axios.put(`https://backendmern-g7.azurewebsites.net/api/peliculas/${pelicula_id}`, peliculaObtenida).then(res => {
         console.log(" response: ", res)
       }).catch((error) => {
         console.log("error : ", error)
